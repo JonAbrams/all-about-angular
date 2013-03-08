@@ -1,0 +1,35 @@
+/* Will be compiled down to a single stylesheet with your sass files */
+.hero-unit {
+  margin-top: 10px;
+  height: 330px;  // Keeps the controls below from jumping around
+  padding: 10px;
+
+  .img-container {
+    text-align: center;
+  }
+
+  pre {
+    font-size: 26px;
+    line-height: 30px;
+    border: none;
+    background: none;
+    word-break: normal;
+  }
+}
+
+.slide-controls {
+  margin: auto;
+  text-align: center;
+
+  button {
+    $button_space: 10px;
+
+    &:first-child {
+      margin-right: $button_space;
+    }
+
+    &:last-child {
+      margin-left: $button_space;
+    }
+  }
+}

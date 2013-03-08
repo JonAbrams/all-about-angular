@@ -6,10 +6,10 @@ angular.module('allAboutAngularApp', [])
   .config ['$routeProvider', ($routeProvider) ->
     $routeProvider
       .when '/',
-        redirectTo: '/0'
+        redirectTo: '/1'
       .when '/:id',
         templateUrl: 'views/main.html'
         controller: 'MainCtrl'
       .otherwise
-        redirectTo: '/0'
+        redirectTo: '/1'
   ]

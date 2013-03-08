@@ -1,6 +1,6 @@
 <div class="hero-unit">
 
-  <div ng-repeat="slide in slides" ng-show="slideNum == $index">
+  <div ng-repeat="slide in slides" ng-show="slideNum == $index + 1">
 
     <div class="img-container">
       <h2>{{ slide.title }}</h2>
@@ -18,13 +18,13 @@
 
   <div>
 
-    <button class="btn" ng-disabled="slideNum == 0" ng-click="open(slideNum - 1)">Previous</button>
+    <button class="btn" ng-disabled="slideNum == 1" ng-click="open(slideNum - 1)">Previous</button>
 
     <span ng-hide="slides.length == 0">
-      {{ slideNum + 1 }} / {{ slides.length }}
+      {{ slideNum }} / {{ slides.length }}
     </span>
 
-    <button class="btn" ng-disabled="slideNum + 1 >= slides.length" ng-click="open(slideNum + 1)">Next</button>
+    <button class="btn" ng-disabled="slideNum == slides.length" ng-click="open(slideNum + 1)">Next</button>
 
   </div>
 </div>

@@ -1,6 +1,6 @@
 # Put the URL pointing to the JSON containing your presentation here
 # A good place to use is http://apibin.jonabrams.com/
-window.PRESENTATION_URL = "https://apibin.jit.su/api/51390fa501bbc9a15500000f/angular-presentation"
+window.PRESENTATION_URL = "http://apibin.jonabrams.com/api/ebf2c6c/all-about-angular"
 
 angular.module('allAboutAngularApp', [])
   .config ['$routeProvider', ($routeProvider) ->
